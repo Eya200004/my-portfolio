@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aya Karfi - Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%2300B0FF'>A</text></svg>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="portfolio.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <!-- Particle.js Background -->
+
+    
     <div id="particles-js"></div>
 
     <!-- Header with Navigation -->
-    <header>
+    <header id="header">
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <a href="#home">/Home</a>
+            <a href="#about">/About</a>
+            <a href="#projects">/Projects</a>
+            <a href="#skills">/Skills</a>
+            <a href="#contact">/Contact</a>
         </nav>
         <h1 id="nom">AYA <i class="fas fa-heart"></i></h1>
     </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div id="particles-js"></div> <!-- Move particles inside the home section -->
-        <div class="header-content">
-          <h1 id="animated-text"></h1> <!-- Typing animation will fill this -->
-          <h1>I'm a <span id="dynamic-text"></span>.</h1> <!-- Dynamic text goes here -->
-        </div>
-      </section>
+    <!--home-->
 
+    <section id="home">
+        
+        <div class="header-content">
+          <h2 id="hello">Hello( ); I'm</h2>
+          <h1 id="name-text">Aya KARFI</h1>
+          <h3><span id="dynamic-text"></span></h3> <!-- Dynamic text -->
+          <pre id="paragraph">
+Passionate future IT engineer, I continuously take on new challenges to innovate and enhance my skills in the IT field.
+Feel free to explore my portfolio.
+          </pre>
+          <a href="#contact" class="btn-3d">Let 's talk!</a>
+        </div>
+        
+    </section>
+    
     <!-- About Section -->
     <section id="about">
         <div class="section-divider">
@@ -44,11 +54,13 @@
                 <img src="IMG_20240123_184443_148.webp" alt="Aya's Photo" class="profile-photo">
                 
             </div>
-
+            
             <!-- Description -->
             <div class="about-description">
+                
                 <p class="description">
-                    I’m a first-year Computer and AI Engineering student passionate about technology, problem-solving, and building innovative projects. I love exploring web development, artificial intelligence, and everything in between.
+    
+                    I’m a first-year Computer and AI Engineering student at the National School of Applied Science Safi. passionate about technology, problem-solving, and building innovative projects. I love exploring web development, artificial intelligence, and everything in between.
                 </p>
                 <a href="https://github.com/Eya200004" class="github-btn" target="_blank">
                     <i class="fab fa-github"></i> My GitHub
@@ -75,73 +87,142 @@
                 <p>Description of project 2...</p>
             </div>
             <div class="project-card">
-                <h3>Project 3</h3>
+                <h3>Personal Portfolio</h3>
                 <p>Description of project 3...</p>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="section-divider">
-            <span>Skills</span>
-        </div>
-        <div class="skills-container">
-            <div class="skill-box">
-                <i class="fab fa-html5"></i>
-                <p>HTML</p>
-            </div>
-            <div class="skill-box">
-                <i class="fab fa-css3-alt"></i>
-                <p>CSS</p>
-            </div>
-            <div class="skill-box">
-                <i class="fab fa-js-square"></i>
-                <p>JavaScript</p>
-            </div>
-            <div class="skill-box">
-                <i class="fab fa-python"></i>
-                <p>Python</p>
-            </div>
-            <div class="skill-box">
-                <i class="fab fa-react"></i>
-                <p>React</p>
-            </div>
-            <div class="skill-box">
-                <i class="fas fa-database"></i>
-                <p>SQL</p>
-            </div>
-            <div class="skill-box">
-                <i class="fab fa-php"></i>
-                <p>PHP</p>
+    
+  <!-- Skills Section -->
+<section id="skills">
+    <div class="section-divider">
+        <span>Skills</span>
+    </div>
+    <div class="skills-intro">
+        <h2>Here are some of the skills I’ve acquired this year:</h2>
+    </div>
+    <div class="skills-container">
+        <!-- Frontend Skills Box -->
+        <div class="category-box">
+            <h3>Frontend</h3>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <i class="fab fa-html5" style="color: #E44D26;"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-css3-alt" style="color: #264DE4;"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-js-square" style="color: #F7DF1E;"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-react" style="color: #61DAFB;"></i>
+                    <p>React</p>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="section-divider">
-            <span>Contact me</span>
+        <!-- Backend Skills Box -->
+        <div class="category-box">
+            <h3>Backend</h3>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <i class="fab fa-python" style="color: #3776AB;"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-php" style="color: #777BB4;"></i>
+                    <p>PHP</p>
+                </div>
+            </div>
         </div>
-        <form class="contact-form">
-            <input type="text"  placeholder="Your Name" required>
-            <input type="email"  placeholder="Your Email" required>
-            <textarea  placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/aya-karfi-5314ba2b8/"><i class="fab fa-linkedin"></i></a>
+        <!-- Data Skills Box -->
+        <div class="category-box">
+            <h3>Data</h3>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <i class="fas fa-database" style="color: #00758F;"></i>
+                    <p>SQL</p>
+                </div>
+            </div>
         </div>
+
+        <!-- Tools Skills Box -->
+        <div class="category-box">
+            <h3>Tools</h3>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <i class="fab fa-git" style="color: #F05032;"></i>
+                    <p>Git</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-docker" style="color: #2496ED;"></i>
+                    <p>Docker</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<!-- Contact Me Section -->
+<section id="contact">
+    <div class="section-divider">
+        <span>Contact Me</span>
+    </div>
+    <div class="contact-container">
+    
+        
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>📨 Send Me a Message</h3>
+            <form action="https://formsubmit.co/karfiaya@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-text">
+            <h2>📬 Let's Connect!</h2>
+             <p>
+                I’m always excited to collaborate on new projects, discuss ideas, or just chat about tech and design. 
+                Whether you have a question, a proposal, or just want to say hello, feel free to reach out—I’d love to hear from you!
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/aya-karfi-5314ba2b8/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Eya200004" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/share/1BKUBZGffV/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/karfi__eyaa?igsh=MWtpMXpmZ3hlNjIxMA%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+        
         <p>&copy; 2025 Aya Karfi. All rights reserved.</p>
-    </footer>
+</footer>
 
-    <script src="portfolio.js"></script>
+<script src="portfolio.js"></script>
 </body>
 </html>
 

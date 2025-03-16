@@ -1,39 +1,52 @@
+//for hide the header while scrolling
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll <= 0) {
+    document.getElementById("header").classList.remove("hide");
+    return;
+  }
+
+  if (currentScroll > lastScroll) {
+    document.getElementById("header").classList.add("hide");
+  } else if (currentScroll < lastScroll) {
+    document.getElementById("header").classList.remove("hide");
+  }
+
+  lastScroll = currentScroll;
+});
+
 // Particle.js Configuration
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('Particles.js loaded!');
 });
-// Typing Animation for Header Text
-const animatedText = document.getElementById('animated-text');
-const text = "Hey, my name is Aya Karfi."; // Text to type
-let index = 0;
 
-function typeText() {
-  if (index < text.length) {
-    animatedText.textContent += text.charAt(index); // Add one character at a time
-    index++;
-    setTimeout(typeText, 100); // Adjust speed here (100ms per letter)
-  }
-}
 
-// Start the typing animation
-typeText();
-
-// Dynamic Text Animation
 const dynamicText = document.getElementById('dynamic-text');
-const texts = ["programmer", "AI enthusiast", "developer"];
+const texts = ["Futur IT Engineer.", "AI Enthusiast.", "Tech-Driven Creator."];
 let textIndex = 0;
 
 function changeText() {
-  dynamicText.textContent = texts[textIndex]; // Update the dynamic text
-  textIndex = (textIndex + 1) % texts.length; // Cycle through the array
+  // Fade out the text
+  dynamicText.style.opacity = 0;
+
+  // Wait for the fade-out transition to complete
+  setTimeout(() => {
+    dynamicText.textContent = texts[textIndex]; // Update the text
+    textIndex = (textIndex + 1) % texts.length; // Cycle through the array
+
+    // Fade in the new text
+    dynamicText.style.opacity = 1;
+  }, 500); // Match this duration with the CSS transition
 }
 
 // Initial call to display the first text immediately
 changeText();
 
-// Change text every 2 seconds
-setInterval(changeText, 2000);
-
+// Change text every 3 seconds (adjust as needed)
+setInterval(changeText, 3000);
 // Hover Effects for Profile Photo
 const profilePhoto = document.querySelector('.profile-photo');
 
@@ -58,6 +71,8 @@ projectCards.forEach(card => {
   });
 });
 
+
+
 // Hover Effects for Skill Boxes
 const skillBoxes = document.querySelectorAll('.skill-box');
 
@@ -70,6 +85,8 @@ skillBoxes.forEach(box => {
     box.style.transform = 'scale(1)';
   });
 });
+
+
 
 // Highlight active link based on current URL
 const currentLocation = window.location.href;
