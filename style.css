@@ -197,12 +197,14 @@ header nav a:hover {
 
 .profile-photo {
   width: 400px;
-  height: 500px;
+  height: 400px; 
   
   border: 5px solid #00B0FF; 
+  border-radius: 50%; 
   transition: transform 0.3s ease;
   box-shadow: 0 0 20px #00B0FF, 0 0 40px #00B0FF; 
 }
+
 
 .profile-photo:hover {
   transform: scale(1.1); 
