@@ -628,7 +628,44 @@ footer {
   .project-card {
     max-width: 500px;
   }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  header .logo {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  header nav ul li {
+    padding: 5px 10px;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+  }
 }
+
+
 
 @media (max-width: 480px) {
   header nav {
@@ -651,6 +688,30 @@ footer {
   .section-divider span {
     font-size: 1.8rem;
   }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+  }
+  
+  header nav ul li a {
+    display: block;
+    width: 100%;
+  }
+  
 }
 
 @media (min-width: 1600px) {
