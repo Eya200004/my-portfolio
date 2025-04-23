@@ -29,18 +29,58 @@
     <!--home-->
 
     <section id="home">
-        
-        <div class="header-content">
-          <h2 id="hello">Hello( ); I'm</h2>
-          <h1 id="name-text">Aya KARFI</h1>
-          <h3><span id="dynamic-text"></span></h3> <!-- Dynamic text -->
-          <pre id="paragraph">
+        <div class="home-container">
+            <div class="header-content">
+              <h2 id="hello">Hello( ); I'm</h2>
+              <h1 id="name-text">Aya KARFI</h1>
+              <h3><span id="dynamic-text"></span></h3> <!-- Dynamic text -->
+              <pre id="paragraph">
 Passionate future IT engineer, I continuously take on new challenges to innovate and enhance my skills in the IT field.
 Feel free to explore my portfolio.
-          </pre>
-          <a href="#contact" class="btn-3d">Let 's talk!</a>
+              </pre>
+              <a href="#contact" class="btn-3d">Let 's talk!</a>
+            </div>
+            
+            <!-- Computer Graphic -->
+            <div class="computer-graphic">
+              <svg viewBox="0 0 800 600" class="computer-svg">
+                <!-- Laptop Base -->
+                <rect x="200" y="350" width="400" height="30" rx="5" fill="#333" />
+                <!-- Laptop Screen Base -->
+                <rect x="250" y="180" width="300" height="170" rx="5" fill="#444" />
+                <!-- Screen -->
+                <rect x="260" y="190" width="280" height="150" rx="2" fill="#0D1117" />
+                <!-- Code Lines -->
+                <rect x="270" y="200" width="180" height="6" rx="2" fill="#00B0FF" opacity="0.7" />
+                <rect x="270" y="215" width="220" height="6" rx="2" fill="#64FFDA" opacity="0.7" />
+                <rect x="270" y="230" width="160" height="6" rx="2" fill="#00B0FF" opacity="0.7" />
+                <rect x="270" y="245" width="190" height="6" rx="2" fill="#64FFDA" opacity="0.7" />
+                <rect x="270" y="260" width="140" height="6" rx="2" fill="#00B0FF" opacity="0.7" />
+                <rect x="270" y="275" width="200" height="6" rx="2" fill="#64FFDA" opacity="0.7" />
+                <rect x="270" y="290" width="180" height="6" rx="2" fill="#00B0FF" opacity="0.7" />
+                <rect x="270" y="305" width="150" height="6" rx="2" fill="#64FFDA" opacity="0.7" />
+                <rect x="270" y="320" width="210" height="6" rx="2" fill="#00B0FF" opacity="0.7" />
+                
+                <!-- Keyboard Hints -->
+                <rect x="270" y="360" width="260" height="10" rx="2" fill="#555" />
+                
+                <!-- Digital Rain Effect (Matrix-like) -->
+                <text x="500" y="210" fill="#00FF41" font-family="monospace" font-size="12">01</text>
+                <text x="520" y="225" fill="#00FF41" font-family="monospace" font-size="12">10</text>
+                <text x="505" y="240" fill="#00FF41" font-family="monospace" font-size="12">01</text>
+                <text x="525" y="255" fill="#00FF41" font-family="monospace" font-size="12">11</text>
+                <text x="510" y="270" fill="#00FF41" font-family="monospace" font-size="12">00</text>
+                <text x="530" y="285" fill="#00FF41" font-family="monospace" font-size="12">10</text>
+                <text x="515" y="300" fill="#00FF41" font-family="monospace" font-size="12">01</text>
+                <text x="525" y="315" fill="#00FF41" font-family="monospace" font-size="12">11</text>
+                
+                <!-- Coffee Mug -->
+                <rect x="560" y="320" width="30" height="40" rx="5" fill="#7B3F00" />
+                <rect x="590" y="330" width="10" height="20" rx="5" fill="#7B3F00" />
+                <ellipse cx="575" cy="320" rx="15" ry="5" fill="#3C1F00" />
+              </svg>
+            </div>
         </div>
-        
     </section>
     
     <!-- About Section -->
@@ -49,49 +89,99 @@ Feel free to explore my portfolio.
             <span>About Me</span>
         </div>
         <div class="about-grid">
-            <!-- Photo -->
+        
             <div class="about-photo">
                 <img src="IMG_20240123_184443_148.webp" alt="Aya's Photo" class="profile-photo">
                 
             </div>
             
-            <!-- Description -->
+            
             <div class="about-description">
                 
                 <p class="description">
     
-                    I’m a first-year Computer and AI Engineering student at the National School of Applied Science Safi. passionate about technology, problem-solving, and building innovative projects. I love exploring web development, artificial intelligence, and everything in between.
+                    I'm a first-year Computer and AI Engineering student at the National School of Applied Science Safi. passionate about technology, problem-solving, and building innovative projects. I love exploring web development, artificial intelligence, and everything in between.
                 </p>
                 <a href="https://github.com/Eya200004" class="github-btn" target="_blank">
                     <i class="fab fa-github"></i> My GitHub
                 </a>
-                <a href="Aya_Karfi_CV.pdf" download="Aya_Karfi_CV.pdf" class="cv-btn">
+                <a href="Professional Modern CV Resume1.pdf" download="Professional Modern CV Resume1.pdf" class="cv-btn">
                     <i class="fas fa-download"></i> Download CV
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+   <!-- Projects Section -->
+<section id="projects">
+    <div class="section-header">
         <div class="section-divider">
-            <span>Projects</span>
+            <span>My project</span>
         </div>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>Bank management System</h3>
-                <p>Description of project 1...</p>
+    </div>
+    <div class="project-container">
+        <div class="project-card">
+            <div class="card-header">
+                <div class="project-icon pulse">
+                    <i class="fas fa-university"></i>
+                </div>
+                <h3>Bank Management System</h3>
             </div>
-            <div class="project-card">
+            <p class="project-description">A comprehensive C-based banking system with account management, transaction tracking, and secure user authentication. Features include deposit/withdrawal functionality, account statement generation, and admin controls.</p>
+            <div class="project-tech">
+                <span class="tech-tag C">Language C</span>
+                
+            </div>
+            <a href="#" class="project-link">
+                View Project
+                <i class="fas fa-arrow-right link-arrow"></i>
+            </a>
+            <div class="card-hover"></div>
+        </div>
+
+        
+        <div class="project-card">
+            <div class="card-header">
+                <div class="project-icon pulse">
+                    <i class="fas fa-cloud-sun"></i>
+                </div>
                 <h3>Weather Website</h3>
-                <p>Description of project 2...</p>
             </div>
-            <div class="project-card">
-                <h3>Personal Portfolio</h3>
-                <p>Description of project 3...</p>
+            <p class="project-description">A responsive weather application that provides real-time weather updates, forecasts, and location-based climate data. Integrates with weather APIs to display temperature, humidity, wind speed, and extended forecasts.</p>
+            <div class="project-tech">
+                <span class="tech-tag html">HTML/CSS</span>
+                <span class="tech-tag js">JavaScript</span>
+                <span class="tech-tag api">REST API</span>
             </div>
+            <a href="#" class="project-link">
+                View Project
+                <i class="fas fa-arrow-right link-arrow"></i>
+            </a>
+            <div class="card-hover"></div>
         </div>
-    </section>
+
+        
+        <div class="project-card">
+            <div class="card-header">
+                <div class="project-icon pulse">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Personal Portfolio</h3>
+            </div>
+            <p class="project-description">A modern, interactive portfolio website showcasing my skills and projects. Features particle.js animations, responsive design, and smooth scrolling navigation. Implemented with a tech-focused aesthetic and interactive elements.</p>
+            <div class="project-tech">
+                <span class="tech-tag html">HTML/CSS</span>
+                <span class="tech-tag js">JavaScript</span>
+                <span class="tech-tag particles">Particles.js</span>
+            </div>
+            <a href="#" class="project-link">
+                View Project
+                <i class="fas fa-arrow-right link-arrow"></i>
+            </a>
+            <div class="card-hover"></div>
+        </div>
+    </div>
+</section>
 
     
   <!-- Skills Section -->
@@ -100,10 +190,9 @@ Feel free to explore my portfolio.
         <span>Skills</span>
     </div>
     <div class="skills-intro">
-        <h2>Here are some of the skills I’ve acquired this year:</h2>
+        <h2>Here are some of the skills I've acquired this year:</h2>
     </div>
     <div class="skills-container">
-        <!-- Frontend Skills Box -->
         <div class="category-box">
             <h3>Frontend</h3>
             <div class="skills-grid">
@@ -125,8 +214,6 @@ Feel free to explore my portfolio.
                 </div>
             </div>
         </div>
-
-        <!-- Backend Skills Box -->
         <div class="category-box">
             <h3>Backend</h3>
             <div class="skills-grid">
@@ -138,10 +225,16 @@ Feel free to explore my portfolio.
                     <i class="fab fa-php" style="color: #777BB4;"></i>
                     <p>PHP</p>
                 </div>
+                <div class="skill-box">
+                    <img src="https://images.icon-icons.com/2699/PNG/512/java_logo_icon_169577.png" 
+                         alt="Java logo" 
+                         style="width: 50px; height: auto;">
+                         <p>Java</p>
+                </div>
+                
+                
             </div>
         </div>
-
-        <!-- Data Skills Box -->
         <div class="category-box">
             <h3>Data</h3>
             <div class="skills-grid">
@@ -151,8 +244,6 @@ Feel free to explore my portfolio.
                 </div>
             </div>
         </div>
-
-        <!-- Tools Skills Box -->
         <div class="category-box">
             <h3>Tools</h3>
             <div class="skills-grid">
@@ -201,8 +292,8 @@ Feel free to explore my portfolio.
         <div class="contact-text">
             <h2>📬 Let's Connect!</h2>
              <p>
-                I’m always excited to collaborate on new projects, discuss ideas, or just chat about tech and design. 
-                Whether you have a question, a proposal, or just want to say hello, feel free to reach out—I’d love to hear from you!
+                I'm always excited to collaborate on new projects, discuss ideas, or just chat about tech and design. 
+                Whether you have a question, a proposal, or just want to say hello, feel free to reach out—I'd love to hear from you!
             </p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/aya-karfi-5314ba2b8/" target="_blank"><i class="fab fa-linkedin"></i></a>
