@@ -88,6 +88,8 @@ header nav a:hover {
   width: 100%;
   height: auto;
   max-width: 500px;
+  display: block;
+  margin: 0 auto;
   filter: drop-shadow(0 0 10px rgba(0, 176, 255, 0.5));
   animation: float 6s ease-in-out infinite;
 }
@@ -596,122 +598,157 @@ footer {
   font-family: 'Arial', sans-serif;
 }
 @media (max-width: 768px) {
-  #name-text {
-    font-size: 4rem;
-  }
-  #dynamic-text {
-    font-size: 2.5rem;
-  }
-  .home-container {
+  header {
     flex-direction: column;
-    padding: 20px;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  
+  header > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    order: 2; 
+  }
+
+  
+  .logo {
+    order: 1; 
+    width: 100%;
     text-align: center;
+    margin-bottom: 15px;
   }
-  .computer-svg {
-    max-width: 300px;
+
+  
+  .nav-group {
+    display: flex;
+    gap: 15px;
   }
-  .about-grid {
-    grid-template-columns: 1fr;
+
+
+  .nav-group.left {
+    justify-content: flex-start;
+  }
+
+  
+  .nav-group.right {
+    justify-content: flex-end;
+  }
+
+  
+  header nav a {
+    font-size: 1rem;
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
+
+  
+  #home {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 20px;
+  }
+
+  .home-container {
+    flex-direction: column-reverse;
+    gap: 40px;
     padding: 0 20px;
   }
-  .profile-photo {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-  }
-  .contact-container {
-    flex-direction: column;
-  }
-  .project-container {
-    grid-template-columns: 1fr;
-  }
-  .project-card {
-    max-width: 500px;
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
+
+  .computer-svg {
+    max-width: 250px;
+    margin: 0 auto;
   }
 
-  header .logo {
-    margin-bottom: 10px;
+  #name-text {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+
+  #dynamic-text {
+    font-size: 2rem;
+  }
+
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .profile-photo {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  
+  .contact-form {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  #name-text {
+    font-size: 2.5rem;
+  }
+
+  #hello {
+    font-size: 2rem;
+  }
+
+  .btn-3d {
+    width: 100%;
     text-align: center;
   }
 
-  header nav {
-    width: 100%;
+  .section-divider span {
+    font-size: 1.5rem;
+    left: 20px;
   }
 
-  header nav ul {
-    display: flex;
-    flex-direction: row;
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+  .nav-group {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center !important;
+  }
+  
+  header nav a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  
+  header > div:first-child {
     gap: 10px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    flex-direction: column;
   }
 
-  header nav ul li {
-    padding: 5px 10px;
-  }
-
-  header nav ul li a {
-    text-decoration: none;
-    font-size: 1rem;
+  .nav-group.left, .nav-group.right {
+    justify-content: center !important;
   }
 }
 
 
-
-@media (max-width: 480px) {
-  header nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-  #name-text {
-    font-size: 3rem;
-  }
-  #paragraph {
-    font-size: 1rem;
-  }
-  .skills-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .category-box {
-    width: 100%;
-  }
-  .section-divider span {
-    font-size: 1.8rem;
-  }
-  header nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-  
-  header nav ul li {
-    width: 100%;
-    text-align: center;
-    padding: 8px 0;
-  }
-  
-  header nav ul li a {
-    display: block;
-    width: 100%;
-  }
-  
+.computer-graphic {
+  min-height: 300px;
 }
 
 @media (min-width: 1600px) {
