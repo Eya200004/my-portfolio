@@ -319,18 +319,7 @@ header nav a:hover {
   transition: color 0.3s ease;
 }
 
-.link-arrow {
-  margin-left: 0.5rem;
-  transition: transform 0.3s ease;
-}
 
-.project-link:hover .link-arrow {
-  transform: translateX(5px);
-}
-
-.project-link:hover {
-  color: #38bdf8;
-}
 
 .card-hover {
   position: absolute;
