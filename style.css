@@ -314,6 +314,22 @@ header nav a:hover {
 .api { background: #6bddfa; color: #1e293b; }
 .particles { background: #4a4a4a; color: white; }
 
+.python {
+    background: #3776AB;   
+    color: white;
+}
+
+.sql {
+    background: #00758F;   
+    color: white;
+}
+
+.ai {
+    background: #f89820;   
+    color: #1e293b;
+}
+
+
 .project-link {
   display: inline-flex;
   align-items: center;
